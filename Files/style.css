@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none; 
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+}
+
+body{
+    background-color:#e9f1f6 ;
+    
+}
+
+
+/* NavBar Css Started  */ 
+/* Header Started */
+header{
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 9%;
+    /* background-color: red; */
+}
+
+.logo{
+    height: 50px ;
+    width: 191px;
+}
+
+.navbar { 
+    display: flex;
+    height: 60px;
+    font-size: 16px;
+    font-family: "work sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar a{
+    color: #000000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a:hover{
+    color: #38AA60;
+}
+
+.log-btn{
+    background-color: #38AA60;
+    border: none;
+    color: #ffffff;
+    padding: 12px 30px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.log-btn:hover{
+    /* background-color: #e9f1f6;
+    color: #38AA60;
+    border: 2px solid #38AA60; */
+    scale: 1.02;
+    
+}
+
+.menuicon{
+    display: none;
+}
+
+/* Header Ended */
+/* Dropdown Menu */
+
+.log-btns{
+    border: 1px solid #ffffff;
+    background-color: #38AA60;
+    color: #ffffff;
+    padding: 12px 30px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+}
+  
+.links-menu li a{
+    color: #ffffff;
+    /* background-color: #0c371b; */
+}
+.login-menu li a {
+    color: #ffffff;
+}
+
+.dropdownMenu{
+    display: none;
+}
+
+.dropdownMenu{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    /* height: 0px; */
+    top: 100%;
+    background-color: #38AA60;
+    padding: 30px 0px 30px 30px;
+    transition: height .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dropdownMenu.open{
+    height: 450px;
+}
+
+.dropdownMenu li{
+    color: #e9f1f6;
+    padding: 20px;
+}
+
+/* Dropdown Menu Ended */
+
+
+
+/* Responsive navbar */
+
+@media (max-width:990px){
+
+    .navbar .links,
+    .navbar .login{
+        display: none;
+    }
+
+    .menuicon{
+        display: block;
+    }
+
+    .dropdownMenu{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+/* Hero CSS Stated */
+
+.hero{
+    display: flex;
+    /* background-color: #38AA60; */
+    padding: 20px 9%;
+    align-items: center;
+}
+.hero h3{
+    font-family: "work sans", 'sans serif';
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.hero h1{
+    color: #38AA60;
+    font-family: "work sans", 'sans serif';
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.hero p{
+    font-family: "open sans", 'sans serif';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* hero css ended */
+
+.glassgrid{
+    background-color: #38AA60;
+    padding: 20px 9%;
+    display: flex;
+    align-items: center;
+    gap: 700px;
+    
+}
+.glassgrid h3{
+    font-family: "work sans", 'sans serif';
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    
+}
